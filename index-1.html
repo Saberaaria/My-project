@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+  <style>
+body{margin: 0px;
+     padding: 0px
+
+}
+ul {list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-transform: uppercase;
+    color: grey;
+    background-color: black
+}
+li a{text-decoration: none;
+     color: white;
+     padding: 18px 20px;
+     display: inline-block
+}
+ul li {
+  padding: 0 .5em .25em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+}
+li a:hover{color: white
+}
+ul li:hover {
+  color: #fff;
+}
+ul li:before {
+  content: "";
+  position: absolute;
+  inset: calc(100% - 3px) 0 0 0; /* 3px = the thickness */
+  background: rgb(3, 112, 201); /* the color */
+  scale: 0 1;
+  transition: .3s, translate 0s .3s;
+}
+ul:hover li:before {
+  scale: 1;
+}
+ul li:hover:before {
+  translate: 0;
+  transition: .8s;
+}
+ul:hover li:has(~ li:hover):before {
+  translate: 100% 0;
+  transition: .2s .2s,scale 0s .4s;
+}
+ul:hover li:hover ~ li:before {
+  translate: -100% 0;
+  transition: .2s .5s,scale 0s .4s;
+}
+.sec1 img{filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          -webkit-transition:all 1s ease 
+}
+.sec1 img:hover{filter: grayscale(0%);
+                filter:gray;
+                -webkit-filter: grayscale(0%);
+                filter: none;
+                transition: 1s ease;
+}
+.sec1{color: rgb(201, 199, 199);
+      text-align: center
+}
+.sec1 h1{font-size: 40px;
+   margin-bottom: 0px;
+   padding-bottom: 0px
+}
+.sec1 h1,p{position: relative;
+           bottom: 170px;
+}
+article{text-align: center;
+        margin-top: 100px;
+        padding-bottom: 60px
+}
+article h1{position: relative;
+          bottom: 170px
+}
+article div{width:60%;
+           text-align: justify;
+           margin: auto;
+           height: 180px;
+           height: 0px
+}
+article img{margin-left: 30px
+}
+article span{margin-left: 250px
+}
+article .span{margin-right: 230px
+}
+.sec2{background-color: black;
+      color: white;
+      text-align: center;
+      position: relative;
+      top: 0px;
+      color: gray;
+      padding-bottom: 40px;
+
+}
+ .sec2 h1{position: relative;
+           top: 40px
+}
+.sec2 p{position: relative;
+           top: 40px
+}
+.sec2 form{margin: auto;
+           margin-top: 80px
+}
+.sec2 input{ padding: 12px;
+             width: 60%;
+             background-color: black;
+             border-bottom: 2px solid white;
+             border-top: 0px;
+             border-right: 0px;
+             border-left: none
+}
+ #sub{width: 30%;
+      color: white;
+      text-align: left;
+      border-left: 0px
+ }
+ .sec2 input:hover{border-bottom: 2px solid rgb(0, 174, 255);
+                   border-top: 0px;
+                   border-right: 0px;
+                   border-left: 0px;
+                   background-color: black
+ }
+ #div9{width: 310px;
+       text-align: left;
+       color: black;
+       background-color: white;
+       display: inline-block;
+       padding-left: 20px;
+       padding-right: 20px;;
+       padding-bottom: 30px;
+       box-sizing: border-box;
+       margin-top: 50px;
+       margin-left: 40px
+ }
+ #div9 img{position: relative;
+           right: 20px
+}
+ #div9 button{padding: 12px;
+               width: 140px;
+               background-color: black;
+               color: white
+}
+footer{height: 500px;
+       text-align: center
+}
+footer p{margin-top: 180px
+}
+footer div{margin-top: -120px;
+           float: left;
+           margin-left: 400px;
+           display: inline-block
+}
+#submitt{background-color: black;
+         color: white;
+         width: 100px;
+}
+footer input{padding: 12px;
+             width: 220px
+}
+footer form{width: 40%;
+     text-align: left;
+     float: right;
+     display: inline-block;
+     margin-top: -120px
+     
+}
+#mess{width: 470px
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Help</a></li>
+        </ul>
+    </nav>
+    <section class="sec1">
+         <img src="../Media/IMG_0361.JPG" alt="picture here" width="100%" height="600px">
+         <h1>Los Angeles</h1>
+         <p>We had the Greatest Offers for You Here</p>
+    </section>
+
+    <article>
+       <h1>THE BAND</h1>
+       <p>Create the company</p>
+       <div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Saepe et odio dolore tempora  fugit consequuntur,hic animi 
+              ratione accusamus iusto quas tenetur sit, placeat voluptates,
+               sint iste qui. Culpa,perferendis.Saepe et odio dolore tempora  fugit consequuntur,hic animi 
+               ratione accusamus iusto quas tenetur sit, placeat voluptates,
+                sint iste qui. Culpa,perferendis.Saepe et odio dolore tempora  fugit consequuntur,hic animi 
+                ratione accusamus iusto quas tenetur sit, placeat voluptates,
+                 sint iste qui. Culpa,perferendis.Saepe et odio dolore tempora  fugit consequuntur,hic animi 
+                 ratione accusamus iusto quas tenetur sit, placeat voluptates,
+                  sint iste qui. Culpa,perferendis.Saepe et odio dolore tempora  fugit consequuntur,hic animi 
+                  ratione accusamus iusto quas tenetur sit, placeat voluptates,
+                   sint iste qui. Culpa,perferendis.Saepe et odio dolore tempora  fugit consequuntur,hic animi 
+                   ratione accusamus iusto quas tenetur sit, placeat voluptates,
+                    sint iste qui. Culpa,perferendis.Saepe et odio dolore tempora  fugit consequuntur,hic animi 
+                    ratione accusamus iusto quas tenetur sit, placeat voluptates,
+                  
+                </p>
+       </div>
+       <span>Band</span>
+       <span>Band</span>
+       <span class="span">Band</span>
+       <br><br>
+       <img src="../Media/IMG_0378.JPG" alt="Picture Here" width="250px" height="300px">
+       <img src="../Media/IMG_0378.JPG" alt="Picture Here" width="250px" height="300px">
+       <img src="../Media/IMG_0378.JPG" alt="Picture Here" width="250px" height="300px">
+    </article>
+          
+    <section class="sec2">
+        <h1>Tour Dates</h1>
+        <p>We had the Greatest Offers for You Here</p>
+
+         <form action="">
+           <input type="text" placeholder="Your Name">   <br><br>
+           <input type="email" placeholder="Your Email">   <br><br>
+           <input id="sub" type="submit" value="Sign in">
+         </form>
+
+         <div id="div9">
+           <img src="../Media/IMG_0130.JPG" alt="" width="310px" height="250px">
+            <div>
+                <h3>New York</h3>
+                <span>12/Mar/2023</span> 
+                <h4> ratione accusamus iusto quas tenetur sit, placeat voluptates</h4>
+                <button>Buy Tickets</button>
+            </div>
+         </div>
+         <div id="div9">
+            <img src="../Media/IMG_0131.JPG" alt="" width="310px" height="250px">
+             <div>
+                 <h3>New York</h3>
+                 <span>12/Mar/2023</span> 
+                 <h4> ratione accusamus iusto quas tenetur sit, placeat voluptates</h4>
+                 <button>Buy Tickets</button>
+             </div>
+          </div>
+          <div id="div9">
+              <img src="../Media/IMG_0133.JPG" alt="" width="310px" height="250px">
+               <div>
+                   <h3>New York</h3>
+                   <span>12/Mar/2023</span> 
+                   <h4> ratione accusamus iusto quas tenetur sit, placeat voluptates</h4>
+                   <button>Buy Tickets</button>
+               </div>
+            </div>
+    </section>
+    <footer>
+      <h1>Contact</h1>
+      <p>Contact us</p>
+         
+      <div>
+        <address>Chicago US <br> Phone 2726-774-4743 <br> Email info@gmail.com</address>
+      </div> 
+      
+      <form action="">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">  <br>
+        <input id="mess" type="text" placeholder="Message">  <br>
+        <input id="submitt" type="submit" value="Sign in">
+      </form>
+
+      
+    </footer>
+</body>
+</html>
